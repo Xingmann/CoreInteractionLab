@@ -1,0 +1,29 @@
+
+html,body{
+	width:75%;
+	height:100%;
+	margin:0;
+}
+div{
+	box-sizing: border-box;
+	height:100%;
+	width:100%;
+	float:left;
+}
+.white {background-color:white;}
+.blue { background-color: #005ce6; }
+.red {background-color:red;}
+.yellow{background-color: #ffff4d;}
+.col1 {width:25%; }
+.col2 {width:75%;}
+.a{height:30%;}
+.b{height:45%;}
+.c{height:25%;}
+.d{height:75%;}
+.e{height:25%;width:85%;}
+.f{height:10%;width:15%;}
+.g{height:15%;width:15%;}
+.bordert{ border-top: 20px black solid; }
+.borderb{ border-bottom: 20px black solid; }
+.borderl{ border-left: 20px black solid; }
+.borderr{ border-right: 20px black solid; 
