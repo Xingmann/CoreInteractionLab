@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+</body>
+<script type="text/javascript">
+	
+var anumber = 5;
+var astring = "xingman";
+var abool = 5 > 6;
+var avariable;
+//is the same thing saying var is undefined; var = undefined;
+
+var integer = 6;
+var float = 3.14159;
+var high = Infinity;
+var low = Infinity;
+var veryHigh = 1000000000;
+
+
+
+var leftleft = "A";
+var left = "T";
+var me = "Me";
+var right = "P";
+var rightright = "B";
+
+//empty array, empty shelf
+var classmates = [];
+
+var classmates = ["A", "T", "P", "B"];
+
+console.log(classmates);
+
+// computers start counting at 0 (not 1!)
+console.log( classmates[0] + 6 );
+
+//insert a new element
+classmates.push("C");
+
+console.log(classmates);
+
+console.log(anumber);
+console.log(astring);
+console.log(abool);
+console.log(avariable);
+
+
+//only get random number from 0 to 1
+var randomnumber = Math.random() * 6;
+
+randomnumber = parseInt(randomnumber);
+
+console.log(randomnumber);
+
+//turn this random number into a integer整数 from 0 to 5
+
+var randomClassmate = classmates[randomnumber];
+
+document.body.innerHTML = randomClassmate;
+
+</script>
+</html>
