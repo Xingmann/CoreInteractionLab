@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	html,body{ height:100%; margin: 0;}
+	div{ position: absolute; }
+</style>
+</head>
+<body>
+</body>
+<script>
+	var counter = 0;
+	while (counter <= 60){
+		var d = document.createElement("div");
+
+		var color = "hsl("+hue+","+saturation+","+lightness+")";
+		var hue = parseInt(Math.random() * 357)
+		var saturation = parseInt(Math.random() * 100) + "%";
+		var lightness = parseInt(Math.random() * 100) + "%";
+		console.log(color);
+		d.style.backgroundColor = color;
+
+		var x = parseInt(Math.random() * 1250) + "px";
+		var y = parseInt(Math.random() * 600) + "px";
+		console.log(x);
+		d.style.left = x;
+		console.log(y);
+		d.style.top = y;
+
+		var width = parseInt(Math.random() * 1200) + "px";
+		var height = parseInt(Math.random() * 1200) + "px";
+		console.log(width);
+		d.style.width = width;
+		console.log(height);
+		d.style.height = height;
+
+		document.body.appendChild(d);
+		counter = counter + 0.2;
+
+		//console.log() just shows you what it is (in "Console")
+
+	}
+
+
+
+</script>
+</html>

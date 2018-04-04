@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div{
+	position: absolute;
+}
+</style>
+</head>
+<body>
+</body>
+<script>
+				// number range	
+function randomInt(low, high){
+	var random = parseInt(Math.random() * high);
+	return random;
+	// when a function's done, this is what it (re)turns to
+}
+
+document.onmousemove = function(event){
+	// console.log(event);
+
+	var d = document.createElement("div");
+	d.style.backgroundColor = "hsl(" +randomInt(0,360)+ ", 100%, 50%)";
+	var width = randomInt(10,500)
+	var height = randomInt(10,500)
+	d.style.width = width + "px";
+	d.style.height = height + "px";
+	d.style.top = event.y - height/2 + "px";
+	d.style.left = event.x - width/2 + "px";
+	document.body.appendChild(d);
+
+}
+</script>
+</html>

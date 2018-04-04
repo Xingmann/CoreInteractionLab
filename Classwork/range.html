@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div{
+	position: absolute;
+}
+</style>
+</head>
+<body>
+</body>
+<script>
+				// number range	
+function randomInt(low, high){
+	var random = parseInt(Math.random() * high);
+	return random;
+	// when a function's done, this is what it (re)turns to
+}
+
+var myInt = randomInt(-100, 900);
+console.log( myInt );
+
+var counter = 0;
+while(counter < 300){
+	var d = document.createElement("div");
+	d.style.backgroundColor = "hsl(" +randomInt(0,360)+ ", 100%, 50%)";
+	d.style.width = randomInt(10,500) + "px";
+	d.style.height = randomInt(10,500) + "px";
+	document.body.appendChild(d);
+	counter = counter + 1;
+}
+</script>
+</html>
