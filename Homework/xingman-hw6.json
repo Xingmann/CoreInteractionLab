@@ -1,0 +1,17 @@
+{
+	"name":["Cheng","Xing","Man"],
+	"home":{
+		"latitude":22.5051963,
+		"longitude":113.9276901
+	},
+	"url":"https://github.com/Xingmann",
+	"favorites":{
+		"color":"EC7063",
+		"book":{
+			"title":"Ada or Ardor: A Family Chronicle",
+			"author":"Vladimir Nabokov"
+		},
+		"tool":"hands",
+		"temperature":24
+	}
+}

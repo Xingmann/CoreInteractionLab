@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</body>
+<script>
+	
+var url = "https://api.citybik.es/v2/networks/citi-bike-nyc";
+var myLat = 40.735786;
+var myLon = -73.9902523;
+//jquery = $
+// $.getJSON(url, function(){});
+$.getJSON(url, function(data){
+	// console.log(data)
+
+	// var stations = data.network.stations;
+
+	var stations = data.network.stations.sort(function(a,b){
+		var latA = Math.abs( a.latitude - myLat);
+		var lonA = Math.abs( a.longitude - myLon);
+
+		var latB = Math.abs( b.latitude - myLat);
+		var lonB = Math.abs( b.longitude - myLon);
+		return (latA+lonA) - (latB+lonB);
+	});
+
+	// console.log(stations)
+
+
+
+	for(var i = 0; i < stations.length; i = i + 1){
+		
+		var p = document.createElement('p');
+		p.innerHTML = stations[i].free_bikes + ' : ' + stations[i].name;
+		document.body.appendChild(p);
+	} 
+
+});
+</script>
+</html>
